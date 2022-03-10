@@ -1,0 +1,8 @@
+/*
+!/pages
+/pages/**/*.tsx
+/pages/*.tsx
+!/components
+/components/**/*.tsx
+/components/*.tsx
+!/styles

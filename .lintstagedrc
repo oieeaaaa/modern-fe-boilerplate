@@ -1,0 +1,5 @@
+{
+  "*.{ts,tsx}": "bash -c tsc",
+  "*.{js,ts,jsx,tsx}": "npm run lint:scripts",
+  "*.scss": "npm run lint:styles"
+}

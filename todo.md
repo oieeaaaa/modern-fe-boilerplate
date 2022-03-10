@@ -2,14 +2,6 @@
 
 - [x] Clean out
 - [x] Setup file structure
-- [] Setup unit test
-  - [] jest
-  - [] react-testing-library
-  - [] TS & ESLint to support `.spec` files
-- [] Setup linters
-  - [] eslint
-  - [] stylelint
-  - [] tsc
 - [] Add git hooks
   - [] install husky
   - [] before commit
@@ -18,6 +10,14 @@
     - [] install
     - [] create a custom basic adaptor
     - [] integrate with husky
+- [] Setup linters
+  - [] eslint
+  - [] stylelint
+  - [] tsc
+- [] Setup unit test
+  - [] jest
+  - [] react-testing-library
+  - [] TS & ESLint to support `.spec` files
 - [] Add automation scripts
   - [] create component
   - [] create page

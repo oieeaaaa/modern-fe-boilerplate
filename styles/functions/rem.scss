@@ -1,5 +1,5 @@
 @use 'styles/abstracts/settings' as *;
 
 @function rem($px) {
-  @return #{$px / $rootSize}rem;
+  @return #{$px / $root-size}rem;
 }

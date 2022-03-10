@@ -1,6 +1,5 @@
-$me: modernEra;
-$agPro: AGPro;
-
+$me: modernera;
+$ag-pro: agpro;
 $fonts: (
   #{$me}: (
       name: 'Modern Era',
@@ -14,7 +13,7 @@ $fonts: (
         700,
       ),
     ),
-  #{$agPro}: (
+  #{$ag-pro}: (
       name: 'AGaramondPro',
       fallback: serif,
       weights: (
@@ -32,37 +31,37 @@ $fonts: (
  * Adobe Garamond Pro
  */
 @font-face {
-  font-family: 'AGaramondPro';
+  font-family: AGaramondPro;
   src: url('/fonts/AGaramondPro-Italic.otf');
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'AGaramondPro';
+  font-family: AGaramondPro;
   src: url('/fonts/AGaramondPro-Regular.otf');
 }
 
 @font-face {
-  font-family: 'AGaramondPro';
+  font-family: AGaramondPro;
   src: url('/fonts/AGaramondPro-Semibold.otf');
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'AGaramondPro';
+  font-family: AGaramondPro;
   src: url('/fonts/AGaramondPro-SemiboldItalic.otf');
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'AGaramondPro';
+  font-family: AGaramondPro;
   src: url('/fonts/AGaramondPro-Bold.otf');
   font-weight: 700;
 }
 
 @font-face {
-  font-family: 'AGaramondPro';
+  font-family: AGaramondPro;
   src: url('/fonts/AGaramondPro-BoldItalic.otf');
   font-weight: 700;
   font-style: italic;
