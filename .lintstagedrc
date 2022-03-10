@@ -1,5 +1,6 @@
 {
   "*.{ts,tsx}": "bash -c tsc",
+  "*.spec.{js,ts,jsx,tsx}": "npm run test:stage",
   "*.{js,ts,jsx,tsx}": "npm run lint:scripts",
   "*.scss": "npm run lint:styles"
 }
