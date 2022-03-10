@@ -1,0 +1,22 @@
+{
+  "customSyntax": "@stylelint/postcss-css-in-js",
+  "extends": ["stylelint-config-standard", "stylelint-scss"],
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        ignoreAtRules: [
+          "tailwind",
+          "apply",
+          "variants",
+          "responsive",
+          "screen",
+        ],
+      },
+    ],
+    "declaration-block-trailing-semicolon": null,
+    "no-descending-specificity": null,
+    "selector-class-pattern": null,
+    "color-function-notation": null,
+  },
+}

@@ -1,0 +1,65 @@
+@use 'styles/abstracts/settings' as *;
+@use 'styles/abstracts/fonts' as *;
+@use 'styles/functions/rem' as *;
+
+@mixin get-the-font($type, $weight) {
+  $str-weight: '#{$weight}';
+  $font: map-get($fonts, $type);
+  $weights: map-get($font, weights);
+  $i-index: str-index($str-weight, 'i'); // if italic (i.e., 400i, 700i, etc...)
+
+  @if (index($weights, $weight) == null) {
+    @error "Font weight does not exist. List of valid font-weights #{$weights}";
+  }
+
+  @if ($i-index != null) {
+    font-weight: unquote(str-slice($str-weight, 0, $i-index - 1));
+    font-style: italic;
+  } @else {
+    font-weight: $weight;
+  }
+
+  font-family: map-get($font, name), map-get($font, fallback);
+}
+
+/*
+ * @param $sizes(<font-size>, <line-height>, <letter-spacing>)
+ *
+ * Description: For defining the font sizes in one mixin
+ *
+ * Example:
+ * @include font.size(16, 18, 0.03);
+ *
+ * Output:
+ * font-size: 16px;
+ * line-height: 18px;
+ * letter-spacing: 0.03em;
+ */
+@mixin size($sizes) {
+  $sizes-length: length($sizes);
+
+  @if ($sizes-length >= 1) {
+    font-size: rem(nth($sizes, 1));
+
+    @if ($sizes-length >= 2 and nth($sizes, 2) != null) {
+      line-height: rem(nth($sizes, 2));
+    }
+
+    @if ($sizes-length == 3) {
+      letter-spacing: #{nth($sizes, 3)}em;
+    }
+  } @else {
+    @error "Missing $sizes argument.";
+  }
+}
+
+/*
+ * Initialize your fonts
+ */
+@mixin mEra($weight: 400) {
+  @include get-the-font($me, $weight);
+}
+
+@mixin agPro($weight: 400) {
+  @include get-the-font($agPro, $weight);
+}

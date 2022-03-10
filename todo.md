@@ -1,0 +1,27 @@
+# Todo
+
+- [x] Clean out
+- [x] Setup file structure
+- [] Setup unit test
+  - [] jest
+  - [] react-testing-library
+  - [] TS & ESLint to support `.spec` files
+- [] Setup linters
+  - [] eslint
+  - [] stylelint
+  - [] tsc
+- [] Add git hooks
+  - [] install husky
+  - [] before commit
+  - [] before push
+  - [] add commitizen
+    - [] install
+    - [] create a custom basic adaptor
+    - [] integrate with husky
+- [] Add automation scripts
+  - [] create component
+  - [] create page
+- [] Add mock api
+  - [] setup json-server
+  - [] setup fakerjs
+- [] Setup storybook

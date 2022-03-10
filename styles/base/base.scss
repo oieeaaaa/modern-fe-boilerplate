@@ -1,0 +1,11 @@
+@use 'styles/abstracts/settings';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: #{settings.$rootSize}px;
+}

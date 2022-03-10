@@ -1,0 +1,109 @@
+$me: modernEra;
+$agPro: AGPro;
+
+$fonts: (
+  #{$me}: (
+      name: 'Modern Era',
+      fallback: sans-serif,
+      weights: (
+        300,
+        400,
+        400i,
+        500,
+        600,
+        700,
+      ),
+    ),
+  #{$agPro}: (
+      name: 'AGaramondPro',
+      fallback: serif,
+      weights: (
+        400,
+        400i,
+        500,
+        500i,
+        700,
+        700i,
+      ),
+    )
+);
+
+/*
+ * Adobe Garamond Pro
+ */
+@font-face {
+  font-family: 'AGaramondPro';
+  src: url('/fonts/AGaramondPro-Italic.otf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'AGaramondPro';
+  src: url('/fonts/AGaramondPro-Regular.otf');
+}
+
+@font-face {
+  font-family: 'AGaramondPro';
+  src: url('/fonts/AGaramondPro-Semibold.otf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'AGaramondPro';
+  src: url('/fonts/AGaramondPro-SemiboldItalic.otf');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'AGaramondPro';
+  src: url('/fonts/AGaramondPro-Bold.otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'AGaramondPro';
+  src: url('/fonts/AGaramondPro-BoldItalic.otf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/*
+ * Modern Era
+ */
+@font-face {
+  font-family: 'Modern Era';
+  src: url('/fonts/Modern_Era_Light.otf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Modern Era';
+  src: url('/fonts/ModernEra-Regular.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Modern Era';
+  src: url('/fonts/ModernEra-Italic.otf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Modern Era';
+  src: url('/fonts/Modern_Era_Medium.otf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Modern Era';
+  src: url('/fonts/Modern_Era_Bold.otf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Modern Era';
+  src: url('/fonts/ModernEra-Black.otf');
+  font-weight: 700;
+}
