@@ -13,7 +13,8 @@
     "lint:styles": "stylelint . --fix",
     "test": "jest --coverage --passWithNoTests",
     "test:stage": "jest --bail --findRelatedTests",
-    "test:watch": "jest --coverage=false --watch"
+    "test:watch": "jest --coverage=false --watch",
+    "create": "node ./tools/create/create.js"
   },
   "dependencies": {
     "classnames": "^2.3.1",
@@ -49,6 +50,7 @@
     "stylelint-config-tailwindcss": "^0.0.3",
     "stylelint-scss": "^4.1.0",
     "tailwindcss": "^3.0.23",
+    "handlebars": "^4.7.7",
     "typescript": "^4.6.2"
   }
 }

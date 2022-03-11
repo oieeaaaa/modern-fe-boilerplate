@@ -1,0 +1,20 @@
+{{#if hasStyles}}
+import cn from 'classnames'
+import styles from './{{name}}.module.scss'
+{{/if}}
+
+const {{componentName name}} = () => (
+  {{#if hasStyles}}
+    <div data-testid="{{name}}" className={cn('container', styles.{{camelCase name}})}>
+  {{else}}
+    <div data-testid="{{name}}">
+  {{/if}}
+    <header>Header</header>
+    <main>
+      this page
+    </main>
+    <footer>Footer</footer>
+  </div>
+)
+
+export default {{componentName name}}

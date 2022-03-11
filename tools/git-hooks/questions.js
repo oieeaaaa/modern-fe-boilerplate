@@ -10,7 +10,7 @@ module.exports = [
   {
     type: 'input',
     name: 'message',
-    message: 'GitHub commit message (required):\n',
+    message: 'Git commit message (required):\n',
     validate(input) {
       if (!input) {
         return 'empty commit message'

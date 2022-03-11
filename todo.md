@@ -18,9 +18,9 @@
   - [x] jest
   - [x] react-testing-library
   - [x] TS & ESLint to support `.spec` files
-- [] Add automation scripts
-  - [] create component
-  - [] create page
+- [x] Add create scripts
+  - [x] create component
+  - [x] create page
 - [] Add mock api
   - [] setup json-server
   - [] setup fakerjs

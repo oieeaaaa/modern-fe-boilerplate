@@ -1,0 +1,13 @@
+import render, { screen } from 'test-utils'
+import {{componentName name}} from '.'
+
+describe('{{componentName name}}', () => {
+  it('should pass snapshot', () => {
+    render(<{{componentName name}} />)
+
+    const view = screen.getByTestId('{{name}}')
+
+    expect(view).toBeInTheDocument()
+    expect(view).toMatchSnapshot()
+  })
+})
