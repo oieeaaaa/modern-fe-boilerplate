@@ -14,7 +14,7 @@
     "test": "jest --coverage --passWithNoTests",
     "test:stage": "jest --bail --findRelatedTests",
     "test:watch": "jest --coverage=false --watch",
-    "create": "node ./tools/create/create.js"
+    "create": "node ./internals/create/create.js"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.5",
@@ -24,6 +24,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@faker-js/faker": "^6.0.0-beta.0",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",

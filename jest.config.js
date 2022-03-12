@@ -7,12 +7,12 @@ const createJestConfig = nextJest({
 
 const config = {
   roots: ['.'],
-  setupFilesAfterEnv: ['./tools/testing/jest-setup'],
+  setupFilesAfterEnv: ['./internals/testing/jest-setup'],
   moduleDirectories: [
     'pages/',
     'components/',
     'node_modules',
-    './tools/testing/',
+    './internals/testing/',
     __dirname, // the root directory
   ],
   testEnvironment: 'jest-environment-jsdom',

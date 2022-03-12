@@ -1,7 +1,10 @@
 {
   "extends": "next",
   "rules": {
-    "max-len": ["error", { "code": 80 }]
+    "max-len": ["error", {
+      "code": 80,
+      "ignoreUrls": true
+    }]
   },
   "overrides": [
     {
@@ -19,6 +22,14 @@
         ],
       },
       files: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+    },
+    {
+      rules: {
+        "import/no-anonymous-default-export": ["error", {
+          "allowArrowFunction": true,
+        }]
+      },
+      files: ["pages/api/**/*.[jt]s"],
     },
   ]
 }

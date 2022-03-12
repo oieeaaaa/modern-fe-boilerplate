@@ -1,1 +1,1 @@
-{ "path": "./tools/git-hooks/commit.js" }
+{ "path": "./internals/git-hooks/commit.js" }

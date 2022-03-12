@@ -2,5 +2,6 @@
 !/pages
 !/components
 !/fixtures
+!/utils
 !/interfaces
-!/tools
+!/internals

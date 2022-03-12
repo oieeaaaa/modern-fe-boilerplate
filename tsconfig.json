@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "components/*": ["components/*"],
-      "tools/testing/*": ["tools/testing/*"]
+      "internals/testing/*": ["internals/testing/*"],
+      "utils/*": ["utils/*"]
     },
     "incremental": true
   },
