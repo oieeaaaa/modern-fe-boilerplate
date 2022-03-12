@@ -1,13 +1,17 @@
-/*
-!components
-components/*.tsx
-components/**/*.tsx
-components/**/*.snap
+node_modules/
+coverage/
 
-!pages
-pages/*.tsx
-pages/**/*.tsx
-pages/**/*.snap
+.next/
+.vercel/
 
-!styles
-!utils
+internals/
+public/
+utils/
+
+*.md
+*.js
+*.jsx
+*.ts
+*.tsx
+*.snap
+*.json
