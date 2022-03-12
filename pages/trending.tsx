@@ -1,9 +1,9 @@
 import Header from 'components/header'
 
-const Home = () => (
+const Trending = () => (
   <div>
     <Header />
   </div>
 )
 
-export default Home
+export default Trending

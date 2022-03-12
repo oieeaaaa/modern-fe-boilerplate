@@ -1,9 +1,9 @@
 import Header from 'components/header'
 
-const Home = () => (
+const Settings = () => (
   <div>
     <Header />
   </div>
 )
 
-export default Home
+export default Settings

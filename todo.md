@@ -21,7 +21,10 @@
 - [x] Add create scripts
   - [x] create component
   - [x] create page
-- [] Add mock api
-  - [] setup json-server
-  - [] setup fakerjs
-- [] Setup storybook
+- [x] Add mock api
+  - [x] setup basic files
+  - [] ignore the mock related files in production build
+- [] Setup docusaurus
+  - [] Getting Started
+  - [] Development
+  - [] Production

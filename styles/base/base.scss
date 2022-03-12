@@ -9,3 +9,7 @@
 html {
   font-size: #{settings.$root-size}px;
 }
+
+body {
+  @apply bg-gray-50;
+}

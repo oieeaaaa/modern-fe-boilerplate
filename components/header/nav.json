@@ -1,0 +1,18 @@
+[
+  {
+    "label": "🏠 Home",
+    "path": "/"
+  },
+  {
+    "label": "🔥 Trending",
+    "path": "/trending"
+  },
+  {
+    "label": "📈 Popular",
+    "path": "/popular"
+  },
+  {
+    "label": "⚙️ Settings",
+    "path": "/settings"
+  }
+]

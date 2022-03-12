@@ -1,0 +1,70 @@
+@forward 'styles/common/container.module';
+@use 'styles/functions/rem' as *;
+
+.header {
+  @apply pt-8;
+
+  font-size: rem(20);
+
+  &_brand {
+    @apply text-3xl font-semibold;
+    @apply text-yellow-500;
+
+    margin-right: auto;
+    text-transform: lowercase;
+  }
+
+  &_top {
+    @apply flex;
+    @apply mb-3;
+  }
+
+  &_search {
+    @apply mr-3;
+  }
+
+  &_search,
+  &_cart {
+    @apply bg-gray-100;
+    @apply flex justify-center items-center;
+    @apply rounded-full;
+
+    width: rem(35);
+    height: rem(35);
+  }
+
+  &_icon {
+    width: rem(20);
+    height: rem(20);
+  }
+
+  &_nav {
+    &__item {
+      @apply text-sm;
+      @apply flex-col mr-3;
+
+      position: relative;
+
+      &::after {
+        @apply bg-yellow-500;
+
+        content: '';
+        position: absolute;
+        bottom: rem(-5);
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        height: rem(2);
+        transform: scaleX(0);
+        transform-origin: center right;
+        transition: transform 0.25s linear;
+      }
+
+      &:hover::after,
+      &.active::after {
+        transform: scaleX(1);
+        transform-origin: center left;
+      }
+    }
+  }
+}
